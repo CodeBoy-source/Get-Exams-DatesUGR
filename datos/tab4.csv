@@ -1,0 +1,59 @@
+,,,,"Sab
+12
+Jun","Lun
+13
+Jun","Mar
+14
+Jun","Mie
+15
+Jun","Jue
+16
+Jun","Vie
+17
+Jun","Sab
+18
+Jun","Lun
+20
+Jun","Mar
+21
+Jun","Mie
+22
+Jun","Jue
+23
+Jun","Vie
+24
+Jun","Sab
+25
+Jun","Lun
+27
+Jun","Mar
+28
+Jun"
+0,2,ES,Estadística,,,,,,,,,,M,,,,,
+1,2,IES,"Ingeniería, Empresa y Sociedad",,,,,,,,M,,,,,,,
+2,2,LMD,Lógica y Métodos Discretos,,,,,,,,,,,,,,T,
+3,2,MP,Metodología de la Programación,,,,,,,,,,,,T,,,
+4,2,TOC,Tecnología y Organización de los Computadores,,,M,,,,,,,,,,,,
+5,2,ALG,Algorítmica,,,,,,,,,,,M,,,,
+6,2,AC,Arquitectura de Computadores,,,,M,,,,,,,,,,,
+7,2,FBD,Fundamentos de Bases de Datos,,,,,,,,,M,,,,,,
+8,2,FIS,Fundamentos de Ingeniería del Software,,,,,,,,,,,,,,,M
+9,2,IA,Inteligencia Artificial,,M,,,,,,,,,,,,,
+10,2,AA,Aprendizaje Automático,,,,,,,,T,,,,,,,
+11,2,IC,Ingeniería del Conocimiento,,,,,,,,,,T,,,,,
+12,2,MH,Metaheurísticas,,,,,,,,,,,,M,,,
+13,2,MCA,Modelos de Computación Avanzada,,,,,,,,,,,,,,M,
+14,2,TSI,Técnicas de los Sistemas Inteligentes,,,T,,,,,,,,,,,,
+15,2,AS,Arquitectura de Sistemas,,,,,,,,T,,,,,,,
+16,2,ACAP,Arquitectura y Computación de Altas Prestaciones,,,,,,,,,,T,,,,,
+17,2,DHD,Desarrollo de Hardware Digital,,,,,,,,,,,,M,,,
+18,2,DSE,Diseño de Sistemas Electrónicos,,,,,,,,,,,,,,M,
+19,2,SMP,Sistemas con Microprocesadores,,,T,,,,,,,,,,,,
+20,2,DSD,Desarrollo de Sistemas Distribuidos,,,,,,,,T,,,,,,,
+21,2,DS,Desarrollo de Software,,,,,,,,,,T,,,,,
+22,2,DIU,Diseño de Interfaces de Usuario,,,,,,,,,,,,M,,,
+23,2,SIBW,Sistemas de Información Basados en Web,,,,,,,,,,,,,,M,
+24,2,SG,Sistemas Gráficos,,,T,,,,,,,,,,,,
+25,2,ABD,Administración de Bases de Datos,,,,,,,,T,,,,,,,
+26,2,ISI,Ingeniería de Sistemas de Información,,,,,,,,,,T,,,,,
+27,2,PW,Programación Web,,,,,,,,,,,,M,,,
