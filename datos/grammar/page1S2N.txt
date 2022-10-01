@@ -1,0 +1,32 @@
+if(nombre=="DGP")
+	nombre="Direccion y Gestion de Proyectos";
+if(nombre=="MDA")
+	nombre="Metodologias de Desarrollo Agil";
+if(nombre=="LP")
+	nombre="Logica y Programacion";
+if(nombre=="PGV")
+	nombre="Programacion Grafica de Videojuegos";
+if(nombre=="SSO")
+	nombre="Seguridad en Sistemas Operativos";
+if(nombre=="BDD")
+	nombre="Bases de Datos Distribuidas";
+if(nombre=="RI")
+	nombre="Recuperacion de  Informacion";
+if(nombre=="IN")
+	nombre="Inteligencia del Negocio";
+if(nombre=="GRD")
+	nombre="Gestion de Recursos Digitales";
+if(nombre=="RSC")
+	nombre="Redes y Sistemas Complejos";
+if(nombre=="SIG")
+	nombre="Sistemas de Informacion Geograficos";
+if(nombre=="SPSI")
+	nombre="Seguridad y Proteccion de Sistemas Informaticos";
+if(nombre=="DAI")
+	nombre="Desarrollo de Aplicaciones para Internet";
+if(nombre=="IV")
+	nombre="Infraestructura Virtual";
+if(nombre=="CRIM")
+	nombre="Compresion y Recuperacion de Informacion Multimedia";
+if(nombre=="TID")
+	nombre="Tratamiento de Imagenes Digitales";

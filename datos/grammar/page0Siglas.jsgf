@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar page0Siglas;
+
+public <page0Siglas> = ALEM | 
+CA | FP | FS | FFT | 
+EC | ED | PDOO | SCD | 
+SO | DDSI | FR | IG | 
+ISE | MC | NPI | PL | 
+VC | PTC | TIC | SS | 
+CPD | SE | TR | II | 
+TE | DBA;

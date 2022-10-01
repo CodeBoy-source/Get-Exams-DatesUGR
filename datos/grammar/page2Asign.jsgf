@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar page2Asign;
+
+public <page2Asign> = Algebra Lineal y Estructuras Matematicas | 
+Calculo | Fundamentos Fisicos y Tecnologicos | Fundamentos de Programacion | Fundamentos del Software | 
+Estructura de computadores | Estructura de Datos | Programacion y Diseno Orientado a Objetos | Sistemas Concurrentes y Distribuidos | 
+Sistemas Operativos | Diseno y Desarrollo de Sistemas de Informacion | Fundamentos de Redes | Informatica Grafica | 
+Ingenieria de Servidores | Modelos de Computacion | Nuevos Paradigmas de Interaccion | Procesadores de Lenguajes | 
+Vision por Computador | Programacion Tecnica y Cientifica | Teoria de la Informacion y la Codificacion | Simulacion de Sistemas | 
+Centros de Procesamiento de Datos | Sistemas Empotrados | Tecnologias de Red | Informatica Industrial | 
+Tecnologias Emergentes;

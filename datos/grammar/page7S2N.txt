@@ -1,0 +1,34 @@
+if(nombre=="CEGE")
+	nombre="Creacion de Empresas y Gestion Emprendedora";
+if(nombre=="DI")
+	nombre="Derecho Informatico";
+if(nombre=="EISI")
+	nombre="Etica, Informatica y Sociedad de la Informacion";
+if(nombre=="CRIP")
+	nombre="Criptografia y Computacion";
+if(nombre=="PLD")
+	nombre="Programacion Ludica";
+if(nombre=="RI")
+	nombre="Robotica Industrial";
+if(nombre=="CII")
+	nombre="Circuitos Integrados e Impresos";
+if(nombre=="CLP")
+	nombre="Controladores Logicos Programables";
+if(nombre=="MEI")
+	nombre="Mantenimiento de Equipos Informaticos";
+if(nombre=="AO")
+	nombre="Animacion por Ordenador";
+if(nombre=="NTP")
+	nombre="Nuevas Tecnologias de la Programacion";
+if(nombre=="PPR")
+	nombre="Programacion Paralela";
+if(nombre=="PDIH")
+	nombre="Perifericos y Dispositivos de Interfaz Humana";
+if(nombre=="SCGC")
+	nombre="Sistemas Cooperativos y Gestion de Contenidos";
+if(nombre=="PDS")
+	nombre="Procesamiento Digital de Senales";
+if(nombre=="PDM")
+	nombre="Programacion de Dispositivos Moviles";
+if(nombre=="RMS")
+	nombre="Redes Multiservicio";

@@ -1,0 +1,32 @@
+if(nombre=="Direccion y Gestion de Proyectos")
+	fecha="Miercoles, 19 de Enero";
+if(nombre=="Metodologias de Desarrollo Agil")
+	fecha="Miercoles, 12 de Enero";
+if(nombre=="Logica y Programacion")
+	fecha="Lunes, 17 de Enero";
+if(nombre=="Programacion Grafica de Videojuegos")
+	fecha="Viernes, 21 de Enero";
+if(nombre=="Seguridad en Sistemas Operativos")
+	fecha="Viernes, 14 de Enero";
+if(nombre=="Bases de Datos Distribuidas")
+	fecha="Lunes, 24 de Enero";
+if(nombre=="Recuperacion de  Informacion")
+	fecha="Miercoles, 19 de Enero";
+if(nombre=="Inteligencia del Negocio")
+	fecha="Miercoles, 12 de Enero";
+if(nombre=="Gestion de Recursos Digitales")
+	fecha="Lunes, 17 de Enero";
+if(nombre=="Redes y Sistemas Complejos")
+	fecha="Viernes, 21 de Enero";
+if(nombre=="Sistemas de Informacion Geograficos")
+	fecha="Viernes, 14 de Enero";
+if(nombre=="Seguridad y Proteccion de Sistemas Informaticos")
+	fecha="Lunes, 24 de Enero";
+if(nombre=="Desarrollo de Aplicaciones para Internet")
+	fecha="Miercoles, 19 de Enero";
+if(nombre=="Infraestructura Virtual")
+	fecha="Miercoles, 12 de Enero";
+if(nombre=="Compresion y Recuperacion de Informacion Multimedia")
+	fecha="Lunes, 17 de Enero";
+if(nombre=="Tratamiento de Imagenes Digitales")
+	fecha="Viernes, 21 de Enero";

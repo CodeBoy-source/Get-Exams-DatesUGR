@@ -1,0 +1,56 @@
+if(nombre=="Estadistica")
+	fecha="Miercoles, 22 de Junio";
+if(nombre=="Ingenieria, Empresa y Sociedad")
+	fecha="Lunes, 20 de Junio";
+if(nombre=="Logica y Metodos Discretos")
+	fecha="Lunes, 27 de Junio";
+if(nombre=="Metodologia de la Programacion")
+	fecha="Viernes, 24 de Junio";
+if(nombre=="Tecnologia y Organizacion de los Computadores")
+	fecha="Martes, 14 de Junio";
+if(nombre=="Algoritmica")
+	fecha="Jueves, 23 de Junio";
+if(nombre=="Arquitectura de Computadores")
+	fecha="Miercoles, 15 de Junio";
+if(nombre=="Fundamentos de Bases de Datos")
+	fecha="Martes, 21 de Junio";
+if(nombre=="Fundamentos de Ingenieria del Software")
+	fecha="Martes, 28 de Junio";
+if(nombre=="Inteligencia Artificial")
+	fecha="Lunes, 13 de Junio";
+if(nombre=="Aprendizaje Automatico")
+	fecha="Lunes, 20 de Junio";
+if(nombre=="Ingenieria del Conocimiento")
+	fecha="Miercoles, 22 de Junio";
+if(nombre=="Metaheuristicas")
+	fecha="Viernes, 24 de Junio";
+if(nombre=="Modelos de Computacion Avanzada")
+	fecha="Lunes, 27 de Junio";
+if(nombre=="Tecnicas de los Sistemas Inteligentes")
+	fecha="Martes, 14 de Junio";
+if(nombre=="Arquitectura de Sistemas")
+	fecha="Lunes, 20 de Junio";
+if(nombre=="Arquitectura y Computacion de Altas Prestaciones")
+	fecha="Miercoles, 22 de Junio";
+if(nombre=="Desarrollo de Hardware Digital")
+	fecha="Viernes, 24 de Junio";
+if(nombre=="Diseno de Sistemas Electronicos")
+	fecha="Lunes, 27 de Junio";
+if(nombre=="Sistemas con Microprocesadores")
+	fecha="Martes, 14 de Junio";
+if(nombre=="Desarrollo de Sistemas Distribuidos")
+	fecha="Lunes, 20 de Junio";
+if(nombre=="Desarrollo de Software")
+	fecha="Miercoles, 22 de Junio";
+if(nombre=="Diseno de Interfaces de Usuario")
+	fecha="Viernes, 24 de Junio";
+if(nombre=="Sistemas de Informacion Basados en Web")
+	fecha="Lunes, 27 de Junio";
+if(nombre=="Sistemas Graficos")
+	fecha="Martes, 14 de Junio";
+if(nombre=="Administracion de Bases de Datos")
+	fecha="Lunes, 20 de Junio";
+if(nombre=="Ingenieria de Sistemas de Informacion")
+	fecha="Miercoles, 22 de Junio";
+if(nombre=="Programacion Web")
+	fecha="Viernes, 24 de Junio";

@@ -1,0 +1,10 @@
+#JSGF V1.0;
+
+grammar page7Asign;
+
+public <page7Asign> = Creacion de Empresas y Gestion Emprendedora | 
+Derecho Informatico | Etica, Informatica y Sociedad de la Informacion | Criptografia y Computacion | Programacion Ludica | 
+Robotica Industrial | Circuitos Integrados e Impresos | Controladores Logicos Programables | Mantenimiento de Equipos Informaticos | 
+Animacion por Ordenador | Nuevas Tecnologias de la Programacion | Programacion Paralela | Perifericos y Dispositivos de Interfaz Humana | 
+Sistemas Cooperativos y Gestion de Contenidos | Procesamiento Digital de Senales | Programacion de Dispositivos Moviles | Redes Multiservicio
+;

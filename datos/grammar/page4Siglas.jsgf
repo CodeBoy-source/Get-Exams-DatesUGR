@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar page4Siglas;
+
+public <page4Siglas> = ES | 
+IES | LMD | MP | TOC | 
+ALG | AC | FBD | FIS | 
+IA | AA | IC | MH | 
+MCA | TSI | AS | ACAP | 
+DHD | DSE | SMP | DSD | 
+DS | DIU | SIBW | SG | 
+ABD | ISI | PW;

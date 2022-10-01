@@ -1,0 +1,11 @@
+#JSGF V1.0;
+
+grammar page5Siglas;
+
+public <page5Siglas> = SIE | 
+SMD | CUIA | SWAP | SMM | 
+TW | TDRC | CEGE | DI | 
+EISI | CRIP | PLD | RI | 
+CII | CLP | MEI | AO | 
+NTP | PPR | PDIH | SCGC | 
+PDS | PDM | RMS;

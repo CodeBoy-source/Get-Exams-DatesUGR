@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar page1Siglas;
+
+public <page1Siglas> = DGP | 
+MDA | LP | PGV | SSO | 
+BDD | RI | IN | GRD | 
+RSC | SIG | SPSI | DAI | 
+IV | CRIM | TID;

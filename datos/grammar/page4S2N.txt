@@ -1,0 +1,56 @@
+if(nombre=="ES")
+	nombre="Estadistica";
+if(nombre=="IES")
+	nombre="Ingenieria, Empresa y Sociedad";
+if(nombre=="LMD")
+	nombre="Logica y Metodos Discretos";
+if(nombre=="MP")
+	nombre="Metodologia de la Programacion";
+if(nombre=="TOC")
+	nombre="Tecnologia y Organizacion de los Computadores";
+if(nombre=="ALG")
+	nombre="Algoritmica";
+if(nombre=="AC")
+	nombre="Arquitectura de Computadores";
+if(nombre=="FBD")
+	nombre="Fundamentos de Bases de Datos";
+if(nombre=="FIS")
+	nombre="Fundamentos de Ingenieria del Software";
+if(nombre=="IA")
+	nombre="Inteligencia Artificial";
+if(nombre=="AA")
+	nombre="Aprendizaje Automatico";
+if(nombre=="IC")
+	nombre="Ingenieria del Conocimiento";
+if(nombre=="MH")
+	nombre="Metaheuristicas";
+if(nombre=="MCA")
+	nombre="Modelos de Computacion Avanzada";
+if(nombre=="TSI")
+	nombre="Tecnicas de los Sistemas Inteligentes";
+if(nombre=="AS")
+	nombre="Arquitectura de Sistemas";
+if(nombre=="ACAP")
+	nombre="Arquitectura y Computacion de Altas Prestaciones";
+if(nombre=="DHD")
+	nombre="Desarrollo de Hardware Digital";
+if(nombre=="DSE")
+	nombre="Diseno de Sistemas Electronicos";
+if(nombre=="SMP")
+	nombre="Sistemas con Microprocesadores";
+if(nombre=="DSD")
+	nombre="Desarrollo de Sistemas Distribuidos";
+if(nombre=="DS")
+	nombre="Desarrollo de Software";
+if(nombre=="DIU")
+	nombre="Diseno de Interfaces de Usuario";
+if(nombre=="SIBW")
+	nombre="Sistemas de Informacion Basados en Web";
+if(nombre=="SG")
+	nombre="Sistemas Graficos";
+if(nombre=="ABD")
+	nombre="Administracion de Bases de Datos";
+if(nombre=="ISI")
+	nombre="Ingenieria de Sistemas de Informacion";
+if(nombre=="PW")
+	nombre="Programacion Web";

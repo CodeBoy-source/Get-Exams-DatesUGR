@@ -1,0 +1,70 @@
+if(nombre=="Estadistica")
+	fecha="Lunes, 11 de Julio";
+if(nombre=="Ingenieria, Empresa y Sociedad")
+	fecha="Jueves, 7 de Julio";
+if(nombre=="Logica y Metodos Discretos.")
+	fecha="Viernes, 15 de Julio";
+if(nombre=="Metodologia de la Programacion.")
+	fecha="Miercoles, 13 de Julio";
+if(nombre=="Tecnologia y Organizacion de los Computadores.")
+	fecha="Martes, 5 de Julio";
+if(nombre=="Arquitectura de Computadores.")
+	fecha="Jueves, 7 de Julio";
+if(nombre=="Algoritmica.")
+	fecha="Martes, 12 de Julio";
+if(nombre=="Fundamentos de Bases de Datos.")
+	fecha="Jueves, 14 de Julio";
+if(nombre=="Fundamentos de Ingenieria del Software.")
+	fecha="Viernes, 8 de Julio";
+if(nombre=="Inteligencia Artificial")
+	fecha="Miercoles, 6 de Julio";
+if(nombre=="Aprendizaje Automatico")
+	fecha="Jueves, 7 de Julio";
+if(nombre=="Ingenieria del Conocimiento")
+	fecha="Viernes, 8 de Julio";
+if(nombre=="Metaheuristicas")
+	fecha="Miercoles, 13 de Julio";
+if(nombre=="Modelos de Computacion Avanzada")
+	fecha="Viernes, 15 de Julio";
+if(nombre=="Tecnicas de los Sistemas Inteligentes")
+	fecha="Martes, 5 de Julio";
+if(nombre=="Arquitectura de Sistemas")
+	fecha="Jueves, 7 de Julio";
+if(nombre=="Arquitectura y Computacion de Altas Prestaciones")
+	fecha="Viernes, 8 de Julio";
+if(nombre=="Desarrollo de Hardware Digital")
+	fecha="Miercoles, 13 de Julio";
+if(nombre=="Diseno de Sistemas Electronicos")
+	fecha="Viernes, 15 de Julio";
+if(nombre=="Sistemas con Microprocesadores")
+	fecha="Martes, 5 de Julio";
+if(nombre=="Desarrollo de Sistemas Distribuidos")
+	fecha="Jueves, 7 de Julio";
+if(nombre=="Desarrollo de Software")
+	fecha="Viernes, 8 de Julio";
+if(nombre=="Diseno de Interfaces de Usuario")
+	fecha="Miercoles, 13 de Julio";
+if(nombre=="Sistemas de Informacion Basados en Web")
+	fecha="Viernes, 15 de Julio";
+if(nombre=="Sistemas Graficos")
+	fecha="Martes, 5 de Julio";
+if(nombre=="Administracion de Bases de Datos")
+	fecha="Jueves, 7 de Julio";
+if(nombre=="Ingenieria de Sistemas de Informacion")
+	fecha="Viernes, 8 de Julio";
+if(nombre=="Programacion Web")
+	fecha="Miercoles, 13 de Julio";
+if(nombre=="Sistemas de Informacion para Empresas")
+	fecha="Viernes, 15 de Julio";
+if(nombre=="Sistemas Multidimensionales")
+	fecha="Martes, 5 de Julio";
+if(nombre=="Computacion Ubicua e Inteligencia Ambiental")
+	fecha="Jueves, 7 de Julio";
+if(nombre=="Servidores Web de Altas Prestaciones")
+	fecha="Viernes, 8 de Julio";
+if(nombre=="Sistemas Multimedia")
+	fecha="Miercoles, 13 de Julio";
+if(nombre=="Tecnologias Web")
+	fecha="Viernes, 15 de Julio";
+if(nombre=="Transmision de Datos y Redes de Computadores")
+	fecha="Martes, 5 de Julio";

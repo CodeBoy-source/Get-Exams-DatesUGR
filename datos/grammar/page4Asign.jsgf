@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar page4Asign;
+
+public <page4Asign> = Estadistica | 
+Ingenieria, Empresa y Sociedad | Logica y Metodos Discretos | Metodologia de la Programacion | Tecnologia y Organizacion de los Computadores | 
+Algoritmica | Arquitectura de Computadores | Fundamentos de Bases de Datos | Fundamentos de Ingenieria del Software | 
+Inteligencia Artificial | Aprendizaje Automatico | Ingenieria del Conocimiento | Metaheuristicas | 
+Modelos de Computacion Avanzada | Tecnicas de los Sistemas Inteligentes | Arquitectura de Sistemas | Arquitectura y Computacion de Altas Prestaciones | 
+Desarrollo de Hardware Digital | Diseno de Sistemas Electronicos | Sistemas con Microprocesadores | Desarrollo de Sistemas Distribuidos | 
+Desarrollo de Software | Diseno de Interfaces de Usuario | Sistemas de Informacion Basados en Web | Sistemas Graficos | 
+Administracion de Bases de Datos | Ingenieria de Sistemas de Informacion | Programacion Web;

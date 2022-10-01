@@ -1,0 +1,11 @@
+#JSGF V1.0;
+
+grammar page5Asign;
+
+public <page5Asign> = Sistemas de Informacion para Empresas | 
+Sistemas Multidimensionales | Computacion Ubicua e Inteligencia Ambiental | Servidores Web de Altas Prestaciones | Sistemas Multimedia | 
+Tecnologias Web | Transmision de Datos y Redes de Computadores | Creacion de Empresas y Gestion Emprendedora | Derecho Informatico | 
+Etica, Informatica y Sociedad de la Informacion | Criptografia y Computacion | Programacion Ludica | Robotica Industrial | 
+Circuitos Integrados e Impresos | Controladores Logicos Programables | Mantenimiento de Equipos Informaticos | Animacion por Ordenador | 
+Nuevas Tecnologias de la Programacion | Programacion Paralela | Perifericos y Dispositivos de Interfaz Humana | Sistemas Cooperativos y Gestion de Contenidos | 
+Procesamiento Digital de Senales | Programacion de Dispositivos Moviles | Redes Multiservicio;

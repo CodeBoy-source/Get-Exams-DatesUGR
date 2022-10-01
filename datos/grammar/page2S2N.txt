@@ -1,0 +1,52 @@
+if(nombre=="ALEM")
+	nombre="Algebra Lineal y Estructuras Matematicas";
+if(nombre=="CA")
+	nombre="Calculo";
+if(nombre=="FFT")
+	nombre="Fundamentos Fisicos y Tecnologicos";
+if(nombre=="FP")
+	nombre="Fundamentos de Programacion";
+if(nombre=="FS")
+	nombre="Fundamentos del Software";
+if(nombre=="EC")
+	nombre="Estructura de computadores";
+if(nombre=="ED")
+	nombre="Estructura de Datos";
+if(nombre=="PDOO")
+	nombre="Programacion y Diseno Orientado a Objetos";
+if(nombre=="SCD")
+	nombre="Sistemas Concurrentes y Distribuidos";
+if(nombre=="SO")
+	nombre="Sistemas Operativos";
+if(nombre=="DDSI")
+	nombre="Diseno y Desarrollo de Sistemas de Informacion";
+if(nombre=="FR")
+	nombre="Fundamentos de Redes";
+if(nombre=="IG")
+	nombre="Informatica Grafica";
+if(nombre=="ISE")
+	nombre="Ingenieria de Servidores";
+if(nombre=="MC")
+	nombre="Modelos de Computacion";
+if(nombre=="NPI")
+	nombre="Nuevos Paradigmas de Interaccion";
+if(nombre=="PL")
+	nombre="Procesadores de Lenguajes";
+if(nombre=="VC")
+	nombre="Vision por Computador";
+if(nombre=="PTC")
+	nombre="Programacion Tecnica y Cientifica";
+if(nombre=="TIC")
+	nombre="Teoria de la Informacion y la Codificacion";
+if(nombre=="SS")
+	nombre="Simulacion de Sistemas";
+if(nombre=="CPD")
+	nombre="Centros de Procesamiento de Datos";
+if(nombre=="SE")
+	nombre="Sistemas Empotrados";
+if(nombre=="TR")
+	nombre="Tecnologias de Red";
+if(nombre=="II")
+	nombre="Informatica Industrial";
+if(nombre=="TE")
+	nombre="Tecnologias Emergentes";
