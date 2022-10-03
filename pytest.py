@@ -82,6 +82,7 @@ for file in dir_tree:
         grammarname1 = file[:-4]+"Asign"
         scriptname = file[:-4]+"S2N"
         scriptname1 = file[:-4]+"N2D"
+        scriptname2 = file[:-4]+"F2N"
         with open("./datos/grammar/"+grammarname+".jsgf","w") as fs:
             fs2 = open("./datos/grammar/"+grammarname1+".jsgf","w")
             fs.write("#JSGF V1.0;\n\n")
@@ -91,10 +92,10 @@ for file in dir_tree:
 
             scp = open("./datos/grammar/"+scriptname+".txt","w")
             scp2 = open("./datos/grammar/"+scriptname1+".txt","w")
+            scp3 = open("./datos/grammar/"+scriptname2+".txt","w")
 
             data = "public <{}> = ".format(grammarname)
             data2 = "public <{}> = ".format(grammarname1)
-            data3 = ""
             for i, asign in enumerate(good_data[3:,4:6]):
                 data += unidecode.unidecode(asign[0])
                 data2 += unidecode.unidecode(asign[1])
@@ -106,8 +107,10 @@ for file in dir_tree:
                 fecha = fecha[0].split("\n")
                 fecha = "{}, {} de {}".format(days[fecha[0]],fecha[1],months[fecha[2]])
                 script2 = "if(nombre==\"{}\")\n\tfecha=\"{}\";\n".format(unidecode.unidecode(asign[1]),fecha)
+                script3 = "if(fecha==\"{}\")\n\tnombre=\"{}\";\n".format(fecha, unidecode.unidecode(asign[1]))
                 scp.write(script)
                 scp2.write(script2)
+                scp3.write(script3)
                 if i != len(good_data[3:,4]) - 1:
                     data += " | "
                     data2 += " | "

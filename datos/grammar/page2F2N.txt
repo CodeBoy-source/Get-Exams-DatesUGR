@@ -1,0 +1,52 @@
+if(fecha=="Lunes, 14 de Febrero")
+	nombre="Algebra Lineal y Estructuras Matematicas";
+if(fecha=="Viernes, 11 de Febrero")
+	nombre="Calculo";
+if(fecha=="Jueves, 17 de Febrero")
+	nombre="Fundamentos Fisicos y Tecnologicos";
+if(fecha=="Jueves, 10 de Febrero")
+	nombre="Fundamentos de Programacion";
+if(fecha=="Martes, 8 de Febrero")
+	nombre="Fundamentos del Software";
+if(fecha=="Jueves, 10 de Febrero")
+	nombre="Estructura de computadores";
+if(fecha=="Lunes, 14 de Febrero")
+	nombre="Estructura de Datos";
+if(fecha=="Miercoles, 16 de Febrero")
+	nombre="Programacion y Diseno Orientado a Objetos";
+if(fecha=="Viernes, 11 de Febrero")
+	nombre="Sistemas Concurrentes y Distribuidos";
+if(fecha=="Viernes, 18 de Febrero")
+	nombre="Sistemas Operativos";
+if(fecha=="Viernes, 18 de Febrero")
+	nombre="Diseno y Desarrollo de Sistemas de Informacion";
+if(fecha=="Jueves, 17 de Febrero")
+	nombre="Fundamentos de Redes";
+if(fecha=="Viernes, 11 de Febrero")
+	nombre="Informatica Grafica";
+if(fecha=="Lunes, 7 de Febrero")
+	nombre="Ingenieria de Servidores";
+if(fecha=="Jueves, 10 de Febrero")
+	nombre="Modelos de Computacion";
+if(fecha=="Viernes, 18 de Febrero")
+	nombre="Nuevos Paradigmas de Interaccion";
+if(fecha=="Miercoles, 16 de Febrero")
+	nombre="Procesadores de Lenguajes";
+if(fecha=="Miercoles, 9 de Febrero")
+	nombre="Vision por Computador";
+if(fecha=="Viernes, 11 de Febrero")
+	nombre="Programacion Tecnica y Cientifica";
+if(fecha=="Lunes, 14 de Febrero")
+	nombre="Teoria de la Informacion y la Codificacion";
+if(fecha=="Lunes, 7 de Febrero")
+	nombre="Simulacion de Sistemas";
+if(fecha=="Viernes, 18 de Febrero")
+	nombre="Centros de Procesamiento de Datos";
+if(fecha=="Miercoles, 16 de Febrero")
+	nombre="Sistemas Empotrados";
+if(fecha=="Miercoles, 9 de Febrero")
+	nombre="Tecnologias de Red";
+if(fecha=="Lunes, 7 de Febrero")
+	nombre="Informatica Industrial";
+if(fecha=="Lunes, 14 de Febrero")
+	nombre="Tecnologias Emergentes";

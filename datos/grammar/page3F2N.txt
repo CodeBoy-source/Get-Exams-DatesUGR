@@ -1,0 +1,34 @@
+if(fecha=="Viernes, 18 de Febrero")
+	nombre="Desarrollo Basado en Agentes";
+if(fecha=="Miercoles, 16 de Febrero")
+	nombre="Direccion y Gestion de Proyectos";
+if(fecha=="Miercoles, 9 de Febrero")
+	nombre="Metodologias de Desarrollo Agil";
+if(fecha=="Viernes, 11 de Febrero")
+	nombre="Logica y Programacion";
+if(fecha=="Lunes, 14 de Febrero")
+	nombre="Programacion Grafica de Videojuegos";
+if(fecha=="Lunes, 7 de Febrero")
+	nombre="Seguridad en Sistemas Operativos";
+if(fecha=="Viernes, 18 de Febrero")
+	nombre="Bases de Datos Distribuidas";
+if(fecha=="Miercoles, 16 de Febrero")
+	nombre="Recuperacion de  Informacion";
+if(fecha=="Miercoles, 9 de Febrero")
+	nombre="Inteligencia del Negocio";
+if(fecha=="Viernes, 11 de Febrero")
+	nombre="Gestion de Recursos Digitales";
+if(fecha=="Lunes, 14 de Febrero")
+	nombre="Redes y Sistemas Complejos";
+if(fecha=="Lunes, 7 de Febrero")
+	nombre="Sistemas de Informacion Geograficos";
+if(fecha=="Viernes, 18 de Febrero")
+	nombre="Seguridad y Proteccion de Sistemas Informaticos";
+if(fecha=="Miercoles, 16 de Febrero")
+	nombre="Desarrollo de Aplicaciones para Internet";
+if(fecha=="Miercoles, 9 de Febrero")
+	nombre="Infraestructura Virtual";
+if(fecha=="Lunes, 7 de Febrero")
+	nombre="Compresion y Recuperacion de Informacion Multimedia";
+if(fecha=="Lunes, 14 de Febrero")
+	nombre="Tratamiento de Imagenes Digitales";

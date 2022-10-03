@@ -1,0 +1,48 @@
+if(fecha=="Lunes, 27 de Junio")
+	nombre="Sistemas de Informacion para Empresas";
+if(fecha=="Martes, 14 de Junio")
+	nombre="Sistemas Multidimensionales";
+if(fecha=="Lunes, 20 de Junio")
+	nombre="Computacion Ubicua e Inteligencia Ambiental";
+if(fecha=="Miercoles, 22 de Junio")
+	nombre="Servidores Web de Altas Prestaciones";
+if(fecha=="Lunes, 27 de Junio")
+	nombre="Sistemas Multimedia";
+if(fecha=="Viernes, 24 de Junio")
+	nombre="Tecnologias Web";
+if(fecha=="Martes, 14 de Junio")
+	nombre="Transmision de Datos y Redes de Computadores";
+if(fecha=="Miercoles, 15 de Junio")
+	nombre="Creacion de Empresas y Gestion Emprendedora";
+if(fecha=="Jueves, 23 de Junio")
+	nombre="Derecho Informatico";
+if(fecha=="Martes, 21 de Junio")
+	nombre="Etica, Informatica y Sociedad de la Informacion";
+if(fecha=="Miercoles, 15 de Junio")
+	nombre="Criptografia y Computacion";
+if(fecha=="Jueves, 23 de Junio")
+	nombre="Programacion Ludica";
+if(fecha=="Martes, 21 de Junio")
+	nombre="Robotica Industrial";
+if(fecha=="Miercoles, 15 de Junio")
+	nombre="Circuitos Integrados e Impresos";
+if(fecha=="Jueves, 23 de Junio")
+	nombre="Controladores Logicos Programables";
+if(fecha=="Martes, 21 de Junio")
+	nombre="Mantenimiento de Equipos Informaticos";
+if(fecha=="Miercoles, 15 de Junio")
+	nombre="Animacion por Ordenador";
+if(fecha=="Jueves, 23 de Junio")
+	nombre="Nuevas Tecnologias de la Programacion";
+if(fecha=="Martes, 21 de Junio")
+	nombre="Programacion Paralela";
+if(fecha=="Miercoles, 15 de Junio")
+	nombre="Perifericos y Dispositivos de Interfaz Humana";
+if(fecha=="Jueves, 23 de Junio")
+	nombre="Sistemas Cooperativos y Gestion de Contenidos";
+if(fecha=="Miercoles, 15 de Junio")
+	nombre="Procesamiento Digital de Senales";
+if(fecha=="Jueves, 23 de Junio")
+	nombre="Programacion de Dispositivos Moviles";
+if(fecha=="Martes, 21 de Junio")
+	nombre="Redes Multiservicio";

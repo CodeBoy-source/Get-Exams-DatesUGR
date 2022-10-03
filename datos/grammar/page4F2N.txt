@@ -1,0 +1,56 @@
+if(fecha=="Miercoles, 22 de Junio")
+	nombre="Estadistica";
+if(fecha=="Lunes, 20 de Junio")
+	nombre="Ingenieria, Empresa y Sociedad";
+if(fecha=="Lunes, 27 de Junio")
+	nombre="Logica y Metodos Discretos";
+if(fecha=="Viernes, 24 de Junio")
+	nombre="Metodologia de la Programacion";
+if(fecha=="Martes, 14 de Junio")
+	nombre="Tecnologia y Organizacion de los Computadores";
+if(fecha=="Jueves, 23 de Junio")
+	nombre="Algoritmica";
+if(fecha=="Miercoles, 15 de Junio")
+	nombre="Arquitectura de Computadores";
+if(fecha=="Martes, 21 de Junio")
+	nombre="Fundamentos de Bases de Datos";
+if(fecha=="Martes, 28 de Junio")
+	nombre="Fundamentos de Ingenieria del Software";
+if(fecha=="Lunes, 13 de Junio")
+	nombre="Inteligencia Artificial";
+if(fecha=="Lunes, 20 de Junio")
+	nombre="Aprendizaje Automatico";
+if(fecha=="Miercoles, 22 de Junio")
+	nombre="Ingenieria del Conocimiento";
+if(fecha=="Viernes, 24 de Junio")
+	nombre="Metaheuristicas";
+if(fecha=="Lunes, 27 de Junio")
+	nombre="Modelos de Computacion Avanzada";
+if(fecha=="Martes, 14 de Junio")
+	nombre="Tecnicas de los Sistemas Inteligentes";
+if(fecha=="Lunes, 20 de Junio")
+	nombre="Arquitectura de Sistemas";
+if(fecha=="Miercoles, 22 de Junio")
+	nombre="Arquitectura y Computacion de Altas Prestaciones";
+if(fecha=="Viernes, 24 de Junio")
+	nombre="Desarrollo de Hardware Digital";
+if(fecha=="Lunes, 27 de Junio")
+	nombre="Diseno de Sistemas Electronicos";
+if(fecha=="Martes, 14 de Junio")
+	nombre="Sistemas con Microprocesadores";
+if(fecha=="Lunes, 20 de Junio")
+	nombre="Desarrollo de Sistemas Distribuidos";
+if(fecha=="Miercoles, 22 de Junio")
+	nombre="Desarrollo de Software";
+if(fecha=="Viernes, 24 de Junio")
+	nombre="Diseno de Interfaces de Usuario";
+if(fecha=="Lunes, 27 de Junio")
+	nombre="Sistemas de Informacion Basados en Web";
+if(fecha=="Martes, 14 de Junio")
+	nombre="Sistemas Graficos";
+if(fecha=="Lunes, 20 de Junio")
+	nombre="Administracion de Bases de Datos";
+if(fecha=="Miercoles, 22 de Junio")
+	nombre="Ingenieria de Sistemas de Informacion";
+if(fecha=="Viernes, 24 de Junio")
+	nombre="Programacion Web";
