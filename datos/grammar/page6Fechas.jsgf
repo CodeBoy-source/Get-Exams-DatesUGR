@@ -1,0 +1,8 @@
+#JSGF V1.0;
+
+grammar page6Fechas;
+
+public <page6Fechas> = Martes, 5 de Julio | 
+Miercoles, 6 de Julio | Jueves, 7 de Julio | Viernes, 8 de Julio | Sabado, 9 de Julio | 
+Lunes, 11 de Julio | Martes, 12 de Julio | Miercoles, 13 de Julio | Jueves, 14 de Julio | 
+Viernes, 15 de Julio | ;

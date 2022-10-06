@@ -80,15 +80,19 @@ for file in dir_tree:
         df = pd.DataFrame(good_data[3:,3:],columns=good_data[index,3:])
         grammarname = file[:-4]+"Siglas"
         grammarname1 = file[:-4]+"Asign"
+        grammarname2 = file[:-4]+"Fechas"
         scriptname = file[:-4]+"S2N"
         scriptname1 = file[:-4]+"N2D"
         scriptname2 = file[:-4]+"F2N"
         with open("./datos/grammar/"+grammarname+".jsgf","w") as fs:
             fs2 = open("./datos/grammar/"+grammarname1+".jsgf","w")
+            fs3 = open("./datos/grammar/"+grammarname2+".jsgf","w")
             fs.write("#JSGF V1.0;\n\n")
             fs2.write("#JSGF V1.0;\n\n")
+            fs3.write("#JSGF V1.0;\n\n")
             fs.write("grammar {};\n\n".format(grammarname))
             fs2.write("grammar {};\n\n".format(grammarname1))
+            fs3.write("grammar {};\n\n".format(grammarname2))
 
             scp = open("./datos/grammar/"+scriptname+".txt","w")
             scp2 = open("./datos/grammar/"+scriptname1+".txt","w")
@@ -122,6 +126,19 @@ for file in dir_tree:
             data2 += ";"
             fs.write(data)
             fs2.write(data2)
+
+            data3 = "public <{}> = ".format(grammarname2)
+            for i, fecha in enumerate(good_data[index,6:]):
+                fecha = fecha.split("\n")
+                fecha = "{}, {} de {}".format(days[fecha[0]],fecha[1],months[fecha[2]])
+                data3 += fecha
+                if i != len(good_data[index]) - 1:
+                    data3 += " | "
+                if i%4==0:
+                    data3 += "\n"
+
+            data3 += ";"
+            fs3.write(data3)
 
         # print(df)
         # df.drop(labels=[0,2],axis=0,inplace=True)
