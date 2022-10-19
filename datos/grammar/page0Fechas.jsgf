@@ -1,9 +1,0 @@
-#JSGF V1.0;
-
-grammar page0Fechas;
-
-public <page0Fechas> = Miercoles, 12 de Enero | 
-Jueves, 13 de Enero | Viernes, 14 de Enero | Sabado, 15 de Enero | Lunes, 17 de Enero | 
-Martes, 18 de Enero | Miercoles, 19 de Enero | Jueves, 20 de Enero | Viernes, 21 de Enero | 
-Sabado, 22 de Enero | Lunes, 24 de Enero | Martes, 25 de Enero | Miercoles, 26 de Enero | 
-;

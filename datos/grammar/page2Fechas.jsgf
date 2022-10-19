@@ -1,8 +1,0 @@
-#JSGF V1.0;
-
-grammar page2Fechas;
-
-public <page2Fechas> = Lunes, 7 de Febrero | 
-Martes, 8 de Febrero | Miercoles, 9 de Febrero | Jueves, 10 de Febrero | Viernes, 11 de Febrero | 
-Sabado, 12 de Febrero | Lunes, 14 de Febrero | Martes, 15 de Febrero | Miercoles, 16 de Febrero | 
-Jueves, 17 de Febrero | Viernes, 18 de Febrero | Sabado, 19 de Febrero | ;

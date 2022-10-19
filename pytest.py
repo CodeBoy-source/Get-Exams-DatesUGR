@@ -12,139 +12,65 @@ from tabulate import tabulate
 import pdfplumber
 import re
 import bs4 as bs
+from utils import download_file, remove_headers
 
 days = {'Lun': "Lunes", 'Mar': "Martes", 'Mie': "Miercoles", 'Jue': "Jueves" , 'Vie': "Viernes",'Sab':"Sabado", 'Dom': "Domingo"}
 months = {'Ene': "Enero",'Feb':"Febrero",'Mar':"Marzo", 'May':"Mayo",'Abr':"Abril",'Jul':"Julio",'Jun':"Junio",'Ago':"Agosto"}
+cursos = ['Ingeniería Informática','Ingeniería de Tecnologías de Telecomunicación',
+        'Informática y Matemáticas', 'Ingeniería Informática y Administración y Dirección de Empresas']
+siglas = ['GII','GIIT','GIIM','GIIADE']
+
 
 domain = "https://etsiit.ugr.es"
 html = domain + '/docencia/grados/calendario-examenes'
-# source = urllib.request.urlopen(html).read()
-# soup = bs.BeautifulSoup(source)
-# print(soup.find_all('a'))
-# headers = soup.body.findAll('a',text=re.compile('.Informática.'))
-# to_add = headers[0].get('href')
-
-# pdf_path = domain + to_add
-# pdf_path = "https://etsiit.ugr.es/sites/centros/etsiit/public/inline-files/Calendario-Examenes-21-22-GII.pdf"
-def download_file(download_url, filename):
-    response = urllib.request.urlopen(download_url)
-    file = open(filename + ".pdf", 'wb')
-    file.write(response.read())
-    file.close()
-
-# download_file(pdf_path, "./datos/calendar")
-
-filename = './datos/calendar.pdf'
-
-PDF=PdfReader(open(filename,'rb'))
-for i,page in enumerate(PDF.pages):
-    writer = PdfWriter()
-    with open("./datos/page{}.pdf".format(i),"wb") as fp:
-        writer.addPage(page)
-        writer.write(fp)
-
-
-test = "Jue\n13\nEne"
-pattern = "([a-zA-Z]+)\n([0-9]+)\n([a-zA-Z]+)"
-# print(test)
-# print(re.match(pattern,test))
+source = urllib.request.urlopen(html).read()
+soup = bs.BeautifulSoup(source,'html.parser')
+a_files = soup.find_all('div',{'class':'field__item'})
+ul_files = a_files[3].find_all_next('ul')
+li_files = ul_files[0].find_all('a',{'class':'file'})
+to_add = [ ref.get('href') for ref in li_files]
 
 dir_tree = os.listdir('./datos')
-dir_tree.sort()
-ot = 0
+if len(dir_tree) == 0:
+    nombres = []
+    for i,a in enumerate(to_add):
+        pdf_path = domain + a
+        nombre = a[a.rfind('/')+1:]
+        nombres.append(nombre)
+        download_file(pdf_path, "./datos/{}".format(nombre))
+
 for file in dir_tree:
-    if 'page' in file and 'pdf' in file:
-        # bad_data = camelot.read_pdf('./datos/'+file)
-        pdf = pdfplumber.open("./datos/"+file)
-        page = pdf.pages[0]
-        good_data = np.array(page.extract_table())
-        # titles = bad_data[0].df
-        index = 1
-        for i in range(0,good_data.shape[0]):
-            # row = titles.iloc[[i]].to_numpy()[0]
-            row = good_data[i,:]
-            row[np.where(row==None)[0]] = ""
-            # row = [val.find("\\") for val in row]
-            res = [bool(re.search(pattern,val)) for val in row]
-            if np.count_nonzero(res)>=1:
-                print(row)
-                print(res)
-                index = i
-                break
+    if '.pdf' in file:
+        filename = "./datos/{}".format(file)
+        print(file,filename)
+        pdf = pdfplumber.open(filename)
+        filtered_table = None
+        first_index = None
+        for i in range(0,len(pdf.pages)-2):
+            page = pdf.pages[i]
+            good_data = np.array(page.extract_table())
+            index  = remove_headers(good_data)
+            if not first_index:
+                first_index = index
 
-        print(index)
-        # print(titles.iloc[[1]].to_numpy()[0])
-        # print(len(good_data[3,3:]),good_data[3,3:])
-        # print(len(titles.iloc[[1]].to_numpy()[0,3:]),titles.iloc[[1]].to_numpy()[0,3:])
-        # df = pd.DataFrame(good_data[3:,3:],columns=titles.iloc[[index]].to_numpy()[0,3:])
-        df = pd.DataFrame(good_data[3:,3:],columns=good_data[index,3:])
-        grammarname = file[:-4]+"Siglas"
-        grammarname1 = file[:-4]+"Asign"
-        grammarname2 = file[:-4]+"Fechas"
-        scriptname = file[:-4]+"S2N"
-        scriptname1 = file[:-4]+"N2D"
-        scriptname2 = file[:-4]+"F2N"
-        with open("./datos/grammar/"+grammarname+".jsgf","w") as fs:
-            fs2 = open("./datos/grammar/"+grammarname1+".jsgf","w")
-            fs3 = open("./datos/grammar/"+grammarname2+".jsgf","w")
-            fs.write("#JSGF V1.0;\n\n")
-            fs2.write("#JSGF V1.0;\n\n")
-            fs3.write("#JSGF V1.0;\n\n")
-            fs.write("grammar {};\n\n".format(grammarname))
-            fs2.write("grammar {};\n\n".format(grammarname1))
-            fs3.write("grammar {};\n\n".format(grammarname2))
-
-            scp = open("./datos/grammar/"+scriptname+".txt","w")
-            scp2 = open("./datos/grammar/"+scriptname1+".txt","w")
-            scp3 = open("./datos/grammar/"+scriptname2+".txt","w")
-
-            data = "public <{}> = ".format(grammarname)
-            data2 = "public <{}> = ".format(grammarname1)
-            for i, asign in enumerate(good_data[3:,4:6]):
-                data += unidecode.unidecode(asign[0])
-                data2 += unidecode.unidecode(asign[1])
-                script = "if(nombre==\"{}\")\n\tnombre=\"{}\";\n".format(unidecode.unidecode(asign[0]),unidecode.unidecode(asign[1]))
-                fila = good_data[3+i,]
-                print(fila)
+            for i in range(3,good_data.shape[0]):
+                fila = good_data[i]
                 fila = np.array([fil=='M' or fil=='T' for fil in fila])
+                fila[:6] = False
                 fecha = good_data[index,fila]
                 fecha = fecha[0].split("\n")
                 fecha = "{}, {} de {}".format(days[fecha[0]],fecha[1],months[fecha[2]])
-                script2 = "if(nombre==\"{}\")\n\tfecha=\"{}\";\n".format(unidecode.unidecode(asign[1]),fecha)
-                script3 = "if(fecha==\"{}\")\n\tnombre=\"{}\";\n".format(fecha, unidecode.unidecode(asign[1]))
-                scp.write(script)
-                scp2.write(script2)
-                scp3.write(script3)
-                if i != len(good_data[3:,4]) - 1:
-                    data += " | "
-                    data2 += " | "
-                if i%4==0:
-                    data += "\n"
-                    data2 += "\n"
+                good_data[i,6] = fecha
 
-            data += ";"
-            data2 += ";"
-            fs.write(data)
-            fs2.write(data2)
+            if filtered_table is not None :
+                good_data = good_data[index+2:,:7]
+                filtered_table = np.vstack((filtered_table,good_data))
+            else:
+                good_data = good_data[index+1:,:7]
+                good_data[index-1,-1] = "Fecha"
+                filtered_table = good_data
 
-            data3 = "public <{}> = ".format(grammarname2)
-            for i, fecha in enumerate(good_data[index,6:]):
-                fecha = fecha.split("\n")
-                fecha = "{}, {} de {}".format(days[fecha[0]],fecha[1],months[fecha[2]])
-                data3 += fecha
-                if i != len(good_data[index]) - 1:
-                    data3 += " | "
-                if i%4==0:
-                    data3 += "\n"
-
-            data3 += ";"
-            fs3.write(data3)
-
-        # print(df)
-        # df.drop(labels=[0,2],axis=0,inplace=True)
-        print(file)
+        df = pd.DataFrame(filtered_table[first_index:,:],columns=filtered_table[first_index-1,:])
+        outname = "./datos/{}.csv".format(file[:file.rfind('.')])
+        df.to_csv(outname,encoding='utf-8')
         print(tabulate(df,headers='keys',tablefmt='psql'))
-        outname = './datos/tab{}.csv'.format(ot)
-        ot += 1
-        print(outname)
-        df.to_csv(outname ,encoding='utf-8')

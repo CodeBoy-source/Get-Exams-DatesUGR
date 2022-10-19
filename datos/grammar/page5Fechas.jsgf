@@ -1,9 +1,0 @@
-#JSGF V1.0;
-
-grammar page5Fechas;
-
-public <page5Fechas> = Sabado, 12 de Junio | 
-Lunes, 13 de Junio | Martes, 14 de Junio | Miercoles, 15 de Junio | Jueves, 16 de Junio | 
-Viernes, 17 de Junio | Sabado, 18 de Junio | Lunes, 20 de Junio | Martes, 21 de Junio | 
-Miercoles, 22 de Junio | Jueves, 23 de Junio | Viernes, 24 de Junio | Sabado, 25 de Junio | 
-Lunes, 27 de Junio | Martes, 28 de Junio | ;
