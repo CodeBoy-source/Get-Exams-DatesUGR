@@ -25,3 +25,26 @@ def remove_headers(good_data):
 
     return index
 
+
+
+# https://www.programcreek.com/python/?CodeExample=remove+accents
+def remove_accents(raw_text):
+    """Removes common accent characters.
+
+    Our goal is to brute force login mechanisms, and I work primary with
+    companies deploying Engligh-language systems. From my experience, user
+    accounts tend to be created without special accented characters. This
+    function tries to swap those out for standard Engligh alphabet.
+    """
+
+    raw_text = re.sub(u"[àáâãäå]", 'a', raw_text)
+    raw_text = re.sub(u"[èéêë]", 'e', raw_text)
+    raw_text = re.sub(u"[ìíîï]", 'i', raw_text)
+    raw_text = re.sub(u"[òóôõö]", 'o', raw_text)
+    raw_text = re.sub(u"[ùúûü]", 'u', raw_text)
+    raw_text = re.sub(u"[ýÿ]", 'y', raw_text)
+    raw_text = re.sub(u"[ß]", 'ss', raw_text)
+    raw_text = re.sub(u"[ñ]", 'n', raw_text)
+    return raw_text
+
+

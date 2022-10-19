@@ -1,6 +1,5 @@
 # import camelot
 import numpy as np
-import unidecode
 import matplotlib.pyplot as plt
 import pandas as pd
 import re
@@ -12,7 +11,7 @@ from tabulate import tabulate
 import pdfplumber
 import re
 import bs4 as bs
-from utils import download_file, remove_headers
+from utils import download_file, remove_headers, remove_accents
 
 days = {'Lun': "Lunes", 'Mar': "Martes", 'Mie': "Miercoles", 'Jue': "Jueves" , 'Vie': "Viernes",'Sab':"Sabado", 'Dom': "Domingo"}
 months = {'Ene': "Enero",'Feb':"Febrero",'Mar':"Marzo", 'May':"Mayo",'Abr':"Abril",'Jul':"Julio",'Jun':"Junio",'Ago':"Agosto"}
@@ -55,6 +54,8 @@ for file in dir_tree:
             if not first_index:
                 first_index = index
 
+            good_data[index+2:,5] =  [ remove_accents(x) for x in good_data[index+2:,5]]
+
             for i in range(3,good_data.shape[0]):
                 fila = good_data[i]
                 fila = np.array([fil=='M' or fil=='T' for fil in fila])
@@ -78,6 +79,6 @@ for file in dir_tree:
         dfs.append(df)
         print(tabulate(df,headers='keys',tablefmt='psql'))
 
-df = pd.DataFrame(np.vstack([d for d in dfs]))
+df = pd.DataFrame(np.vstack([d for d in dfs]),columns=dfs[0].columns)
 outname = "./datos/merged.csv"
 df.to_csv(outname,encoding='utf-8')
