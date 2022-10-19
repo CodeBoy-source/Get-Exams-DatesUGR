@@ -39,6 +39,8 @@ if len(dir_tree) == 0:
         nombres.append(nombre)
         download_file(pdf_path, "./datos/{}".format(nombre))
 
+
+dfs  = []
 for file in dir_tree:
     if '.pdf' in file:
         filename = "./datos/{}".format(file)
@@ -73,4 +75,9 @@ for file in dir_tree:
         df = pd.DataFrame(filtered_table[first_index:,:],columns=filtered_table[first_index-1,:])
         outname = "./datos/{}.csv".format(file[:file.rfind('.')])
         df.to_csv(outname,encoding='utf-8')
+        dfs.append(df)
         print(tabulate(df,headers='keys',tablefmt='psql'))
+
+df = pd.DataFrame(np.vstack([d for d in dfs]))
+outname = "./datos/merged.csv"
+df.to_csv(outname,encoding='utf-8')
