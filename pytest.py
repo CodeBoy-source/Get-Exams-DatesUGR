@@ -18,19 +18,24 @@ months = {'Ene': "Enero",'Feb':"Febrero",'Mar':"Marzo", 'May':"Mayo",'Abr':"Abri
 cursos = ['Ingeniería Informática','Ingeniería de Tecnologías de Telecomunicación',
         'Informática y Matemáticas', 'Ingeniería Informática y Administración y Dirección de Empresas']
 siglas = ['GII','GIIT','GIIM','GIIADE']
+dicti = {
+        'GII':'Ingeniería Informática',
+        'GITT':'Ingeniería de Tecnologías de Telecomunicación',
+        'GIIM':'Ingeniería Informática y Matemáticas',
+        'GIIADE':'Ingeniería Informática y Administración y Dirección de Empresas'
+}
 
-
-domain = "https://etsiit.ugr.es"
-html = domain + '/docencia/grados/calendario-examenes'
-source = urllib.request.urlopen(html).read()
-soup = bs.BeautifulSoup(source,'html.parser')
-a_files = soup.find_all('div',{'class':'field__item'})
-ul_files = a_files[3].find_all_next('ul')
-li_files = ul_files[0].find_all('a',{'class':'file'})
-to_add = [ ref.get('href') for ref in li_files]
 
 dir_tree = os.listdir('./datos')
 if len(dir_tree) == 0:
+    domain = "https://etsiit.ugr.es"
+    html = domain + '/docencia/grados/calendario-examenes'
+    source = urllib.request.urlopen(html).read()
+    soup = bs.BeautifulSoup(source,'html.parser')
+    a_files = soup.find_all('div',{'class':'field__item'})
+    ul_files = a_files[3].find_all_next('ul')
+    li_files = ul_files[0].find_all('a',{'class':'file'})
+    to_add = [ ref.get('href') for ref in li_files]
     nombres = []
     for i,a in enumerate(to_add):
         pdf_path = domain + a
@@ -47,23 +52,32 @@ for file in dir_tree:
         pdf = pdfplumber.open(filename)
         filtered_table = None
         first_index = None
-        for i in range(0,len(pdf.pages)-2):
+        for i in range(0,len(pdf.pages)):
             page = pdf.pages[i]
             good_data = np.array(page.extract_table())
             index  = remove_headers(good_data)
             if not first_index:
                 first_index = index
 
+            if good_data.shape[1] == 1:
+                continue
+
             good_data[index+2:,5] =  [ remove_accents(x) for x in good_data[index+2:,5]]
+            for key in dicti.keys():
+                if good_data[index+2,0] == key:
+                    good_data[index+2:,0] = remove_accents(dicti[key])
 
             for i in range(3,good_data.shape[0]):
-                fila = good_data[i]
-                fila = np.array([fil=='M' or fil=='T' for fil in fila])
-                fila[:6] = False
-                fecha = good_data[index,fila]
-                fecha = fecha[0].split("\n")
-                fecha = "{}, {} de {}".format(days[fecha[0]],fecha[1],months[fecha[2]])
-                good_data[i,6] = fecha
+                try:
+                    fila = good_data[i]
+                    fila = np.array([fil=='M' or fil=='T' for fil in fila])
+                    fila[:6] = False
+                    fecha = good_data[index,fila]
+                    fecha = fecha[0].split("\n")
+                    fecha = "{}, {} de {}".format(days[fecha[0]],fecha[1],months[fecha[2]])
+                    good_data[i,6] = fecha
+                except:
+                    good_data[i,6] = None
 
             if filtered_table is not None :
                 good_data = good_data[index+2:,:7]
