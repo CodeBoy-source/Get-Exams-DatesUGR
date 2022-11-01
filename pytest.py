@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import re
+import csv
 import os
 import sys
 from PyPDF2 import PdfFileReader, PdfWriter, PdfReader
@@ -45,8 +46,8 @@ if len(dir_tree) == 0:
 
 
 dfs  = []
-grado_entities= [[],[]]
-asign_entities = [[],[]]
+grado_entities= [[],[],[]]
+asign_entities = [[],[],[]]
 for file in dir_tree:
     if '.pdf' in file:
         filename = "./datos/{}".format(file)
@@ -71,7 +72,8 @@ for file in dir_tree:
                     good_data[index+2:,0] = remove_accents(dicti[key])
                     if(good_data[index+2,0] not in grado_entities[0]):
                         grado_entities[0].append(good_data[index+2,0])
-                        grado_entities[1].append(good_data[index+2,0]+","+info)
+                        grado_entities[1].append(good_data[index+2,0])
+                        grado_entities[2].append(info)
 
             for i in range(3,good_data.shape[0]):
                 try:
@@ -87,7 +89,8 @@ for file in dir_tree:
 
             if good_data[index+2:,5].any() not in asign_entities[0]:
                 asign_entities[0] = np.append(asign_entities[0],good_data[index+2:,5])
-                asign_entities[1] = np.append(asign_entities[1],good_data[index+2:,5] + "," +good_data[index+2:,4])
+                asign_entities[1] = np.append(asign_entities[1],good_data[index+2:,5])
+                asign_entities[2] = np.append(asign_entities[2],good_data[index+2:,4])
             if filtered_table is not None :
                 good_data = good_data[index+2:,:7]
                 filtered_table = np.vstack((filtered_table,good_data))
@@ -108,8 +111,8 @@ df.to_csv(outname,encoding='utf-8')
 
 df = pd.DataFrame(np.array(asign_entities,dtype=object).T)
 outname = "./datos/asign_entitites.csv"
-df.to_csv(outname,encoding='utf-8')
+df.to_csv(outname,encoding='utf-8',header=False,index=False, quoting=csv.QUOTE_ALL)
 
 df = pd.DataFrame(np.array(grado_entities).T)
 outname = "./datos/grado_entities.csv"
-df.to_csv(outname,encoding='utf-8')
+df.to_csv(outname,encoding='utf-8',header=False,index=False,quoting=csv.QUOTE_ALL)
